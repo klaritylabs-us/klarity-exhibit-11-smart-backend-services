@@ -1,0 +1,19 @@
+[package]
+name = "klarity-exhibit-11-smart-backend-services"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "SMART backend JWT payload checks"
+publish = false
+
+[lib]
+name = "smart_backend"
+path = "src/lib.rs"
+
+[[bin]]
+name = "validate-smart-backend"
+path = "src/bin/validate_smart_backend.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
